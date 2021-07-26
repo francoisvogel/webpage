@@ -1,21 +1,18 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import '../styles/global.css'
 import Header from "./header"
+import DarkTrace from "./darkTrace"
+import ScrollProgressBar from "./scrollProgressBar"
 import Footer from "./footer"
-import { Link } from "gatsby"
 
 const IndexPage = () => {
     return (
         <main class="min-h-screen flex flex-col justify-between">
             <div>
-                <Header></Header>
-                <div class="fixed -top-24 shadow-2xl z-40 w-full">
-                    <div class="m-10 h-5 z-40 bg-red-300"></div>
-                </div>
-                <div class="sticky top-0 h-1 z-40 bg-blue-300">
-                    <div class="h-full bg-blue-500 transition-all ease-out">
-                    </div>
-                </div>
+                <Header directory=""/>
+                <DarkTrace></DarkTrace>
+                <ScrollProgressBar></ScrollProgressBar>
                 <div class="flex flex-col items-center w-full h">
                     <p class="mt-10 text-5xl sm:text-7xl text-center">Hi, I'm Francois Vogel</p>
                     <p class="max-w-md mt-20 sm:text-3xl text-xl text-center">I'm a student at Lycée Louis-le-Grand in Paris. I love programming ever since I started coding. Also, I like to play some Jazz and I'm a hobbyist drone pilot.</p>
