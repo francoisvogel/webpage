@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
+    'gatsby-plugin-postcss', // added for tailwind css to work
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
