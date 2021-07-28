@@ -5,7 +5,7 @@ import '../styles/global.css'
 function Lnk(props) {
     return (
         <Link to={props.to}>
-            <p class="inline-block text-blue-300 duration-100 hover:text-blue-400">{props.text}</p>
+            <p class="inline-block text-blue-400 duration-100 hover:text-blue-500">{props.text}</p>
         </Link>
     )
 }

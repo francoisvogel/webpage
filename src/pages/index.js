@@ -8,7 +8,7 @@ import Footer from "./footer"
 
 const IndexPage = () => {
     return (
-        <main class="min-h-screen flex flex-col justify-between">
+        <main class="min-h-screen flex flex-col justify-between bg-gray-100">
             <div>
                 <Header directory=""/>
                 <DarkTrace></DarkTrace>
