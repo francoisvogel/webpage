@@ -20,13 +20,13 @@ const Blog = ({data}) => {
                         data.allMdx.nodes.map((node) => (
                             <div key={node.id} class="mt-5 mb-5 w-full sm:w-4/5 bg-white shadow-2xl overflow-hidden h-500px">
                                 <p class="mt-3 text-3xl text-center sm:text-5xl mb-3">{node.frontmatter.title}</p>
-                                <p class="mx-8 text-2xl sm:text-3xl mb-2 font-extrabold">{node.frontmatter.description}</p>
-                                <div class="mx-7 flex flex-row justify-between">
+                                <p class="mx-1 sm:mx-8 text-2xl sm:text-3xl mb-2 font-extrabold">{node.frontmatter.description}</p>
+                                <div class="mx-1 sm:mx-7 flex flex-row justify-between">
                                     <p class="text-lg sm:text-xl">On {node.frontmatter.date} by {node.frontmatter.author}</p>
                                     <p class="text-lg sm:text-xl text-gray-400 font-bold">{node.frontmatter.read} min read</p>
                                 </div>
                                 <div>
-                                    <p class="sm:text-lg mt-3 mx-8">
+                                    <p class="sm:text-lg mt-3 mx-1 sm:mx-8">
                                         <MDXRenderer>
                                             {node.body}
                                         </MDXRenderer>
