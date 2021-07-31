@@ -32,7 +32,7 @@ const Blog = ({data}) => {
                                         </MDXRenderer>
                                     </p>
                                     <div class="bg-gradient-to-b from-transparent to-white sticky bottom-5 h-100px z-40"></div>
-                                    <div class="p-2 bg-white text-center text-xl sm:text-2xl sticky bottom-0 z-50"><Lnk to={{node.frontmatter.slug}}" text="Read More" /></div>
+                                    <div class="p-2 bg-white text-center text-xl sm:text-2xl sticky bottom-0 z-50"><Lnk to={`../${node.frontmatter.slug}`} text="Read More" /></div>
                                 </div>
                             </div>
                         ))

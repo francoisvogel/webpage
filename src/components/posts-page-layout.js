@@ -1,11 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import Header from "../pages/header"
+import DarkTrace from "../pages/darkTrace"
+import ScrollProgressBar from "../pages/scrollProgressBar"
+import Footer from "../pages/footer"
+import Lnk from "../pages/lnk"
 
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <div>
-      <div style={{ padding: "0 1rem", marginBottom: "10rem" }}>
+      <div>
         <h1>{mdx.frontmatter.title}</h1>
         <h4
           style={{
