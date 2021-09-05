@@ -5,7 +5,7 @@ import Lnk from "./lnk"
 const Footer = () => {
     return (
         <footer class="flex flex-col justify-between bg-gray-700 text-white text-base text-center">
-            <div class="flex flex-row justify-evenly">
+            <div class="flex flex-col lg:flex-row justify-evenly">
                 <div class="p-2 flex flex-col justify-center">
                     <p>Privacy Policy & Legal</p>
                     <Lnk to="./policy" text="Privacy Policy" />
@@ -13,7 +13,7 @@ const Footer = () => {
                 </div>
                 <div class="p-2 flex flex-col justify-center">
                     <p>Contact Info</p>
-                    <Lnk to="mailto:francois.g.vogel@gmail.com" text="Gmail (francois.g.vogel@gmail.com)" />
+                    <Lnk to="https://mailto:francois.g.vogel@gmail.com" text="Gmail (francois.g.vogel@gmail.com)" />
                     <Lnk to="https://discord.com" text="Discord Francois#6352" />
                     <Lnk to="https://github.com/francoisvogel" text="Github (francoisvogel)" />
                     <Lnk to="https://twitter.com/fgvogel" text="Twitter (fgvogel)" />

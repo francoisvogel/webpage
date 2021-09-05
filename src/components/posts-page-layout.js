@@ -7,20 +7,11 @@ import ScrollProgressBar from "../pages/scrollProgressBar"
 import Footer from "../pages/footer"
 import Lnk from "../pages/lnk"
 import ShareButtons from "../components/share/sharebuttons.component"
+import { MDXProvider } from "@mdx-js/react"
+import useScrollPercentage from "react-scroll-percentage"
 
 export default function PageTemplate({ data: { mdx } }) {
-  return (
-    // <div>
-    //   <div>
-    //     <h1>{mdx.frontmatter.title}</h1>
-    //     <h4
-    //       style={{
-    //         color: "gray",
-    //         fontWeight: "normal",
-    //       }}
-    //     >{`${mdx.frontmatter.date} by ${mdx.frontmatter.author}`}</h4>
-    //     <MDXRenderer>{mdx.body}</MDXRenderer>
-    //   </div>
+    return (
         <main class="min-h-screen flex flex-col justify-between bg-gray-100">
             <div>
                 <Header directory="../"/>
@@ -30,11 +21,11 @@ export default function PageTemplate({ data: { mdx } }) {
                     <p class="mt-5 text-3xl sm:text-5xl">{mdx.frontmatter.title}</p>
                     <div class="mt-5 px-10 flex flex-col lg:flex-row lg:justify-between justify-between w-full">
                         <p class="my-2 text-sm lg:text-xl text-center">On {mdx.frontmatter.date} by {mdx.frontmatter.author}</p>
-                        <ShareButtons title={`Read ${mdx.frontmatter.title}`} url={`https://francoisvogel.io/${mdx.frontmatter.slug}`} twitterHandle="fgvogel" tags="#fgvogel" />
+                        <ShareButtons title={`Read ${mdx.frontmatter.title}`} url={`https://francoisvogel.io/${mdx.frontmatter.slug}`} twitterHandle="fgvogel" />
                         <p class="my-2 text-sm text-center sm:text-xl text-gray-400 font-bold">{mdx.frontmatter.read} min read</p>
                     </div>
-                    <div class="mx-5 my-3">
-                        <MDXRenderer>{mdx.body}</MDXRenderer>
+                    <div class="mx-5 my-3 w-4/5">
+                        <MDXProvider><MDXRenderer>{mdx.body}</MDXRenderer></MDXProvider>
                     </div>
                 </div>
             </div>

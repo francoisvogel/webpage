@@ -10,7 +10,11 @@ import {
   WhatsappShareButton,
   WhatsappIcon,
   RedditShareButton,
-  RedditIcon
+  RedditIcon,
+  TelegramShareButton,
+  TelegramIcon,
+  EmailShareButton,
+  EmailIcon
 } from 'react-share'
 
 const ShareButtons = ({title, url, twitterHandle, tags}) => {
@@ -29,9 +33,17 @@ const ShareButtons = ({title, url, twitterHandle, tags}) => {
             <LinkedinIcon  size={40} round={true}/>
           </LinkedinShareButton>
 
+          <EmailShareButton url={url} title={title}>
+            <EmailIcon size={40} round={true}></EmailIcon>
+          </EmailShareButton>
+
           <RedditShareButton url={url} title={title} >
             <RedditIcon  size={40} round={true} />
           </RedditShareButton>
+
+          <TelegramShareButton url={url} title={title}>
+            <TelegramIcon size={40} round={true}></TelegramIcon>
+          </TelegramShareButton>
 
           <WhatsappShareButton url={url} title={title}>
                <WhatsappIcon  size={40} round={true}/>

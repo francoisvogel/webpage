@@ -16,7 +16,7 @@ const Blog = ({data}) => {
                 <DarkTrace></DarkTrace>
                 <ScrollProgressBar></ScrollProgressBar>
                 <div class="flex flex-col items-center w-full">
-                    {
+                    { 
                         data.allMdx.nodes.map((node) => (
                             <div key={node.id} class="mt-5 mb-5 w-full sm:w-4/5 bg-white shadow-2xl overflow-hidden h-500px">
                                 <p class="mt-3 text-3xl text-center sm:text-5xl mb-3">{node.frontmatter.title}</p>
