@@ -22,6 +22,7 @@ const Footer = () => {
                     <p>Apps & Projects</p>
                     <Lnk to="https://francoisvogel.io" text="My personal webpage (built with React, Gatsby and Tailwind CSS)" />
                     <Lnk to="https://asciifinder.francoisvogel.io" text="ASCII Finder (helps find, search, and convert ASCII characters)" />
+                    <Lnk to="https://global-hawk.herokuapp.com" text="Global Hawk - an io game" />
                 </div>
             </div>
             <p class="text-center p-1">Copyright © 2021 Francois Vogel - All rights reserved</p>
