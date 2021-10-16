@@ -14,9 +14,10 @@ const Footer = () => {
                 <div class="p-2 flex flex-col justify-center">
                     <p>Contact Info</p>
                     <Lnk to="https://mailto:francois.g.vogel@gmail.com" text="Gmail (francois.g.vogel@gmail.com)" />
-                    <Lnk to="https://discord.com" text="Discord Francois#6352" />
+                    <Lnk to="https://discord.com" text="Discord (Francois#6352)" />
                     <Lnk to="https://github.com/francoisvogel" text="Github (francoisvogel)" />
                     <Lnk to="https://twitter.com/fgvogel" text="Twitter (fgvogel)" />
+                    
                 </div>
                 <div class="p-2 flex flex-col justify-center">
                     <p>Apps & Projects</p>
