@@ -14,9 +14,9 @@ function Header(props) {
                 <Link to={props.directory+"blog"}>
                     <p class="text-center text-xl p-5 h-full duration-100 hover:bg-gray-200 hover:text-blue-500">Blog</p>
                 </Link>
-                <Link to={props.directory+"about"}>
+                {/* <Link to={props.directory+"about"}>
                     <p class="text-center text-xl p-5 h-full duration-100 hover:bg-gray-200 hover:text-blue-500">About</p>
-                </Link>
+                </Link> */}
             </div>
         </header>
     )
