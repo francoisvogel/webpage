@@ -11,7 +11,7 @@ const IndexPage = () => {
     return (
         <main class="min-h-screen flex flex-col justify-between bg-gray-100">
             <div>
-                <Header directory=""/>
+                <Header directory="" />
                 <DarkTrace></DarkTrace>
                 <ScrollProgressBar></ScrollProgressBar>
                 <div class="flex flex-col items-center w-full h">
@@ -22,13 +22,7 @@ const IndexPage = () => {
                     </Link>
                     <p class="md-10 text-xl sm:text-3xl text-center">Let's connect!</p>
                     <div class="flex flex-col justify-center align-center text-xl text-center">
-                        <Lnk to="https://www.youtube.com/channel/UCKp24oSRL2OdSV0PD_OeI7w" text="YouTube" />
-                        <Lnk to="https://github.com/francoisvogel" text="Github" />
-                        <Lnk to="https://codeforces.com/profile/fvogel" text="Codeforces" />
-                        <Lnk to="https://www.codechef.com/users/fvogel" text="CodeChef" />
-                        <Lnk to="https://www.linkedin.com/in/francois-vogel-4300031b5/" text="Linkedin" />
-                        <Lnk to="https://instagram.com/f_v_o_g_e_l" text="Instagram" />
-                        <Lnk to="https://twitter.com/fgvogel" text="Twitter" />
+                        <Lnk to="https://www.linkedin.com/in/f-vogel/" text="LinkedIn" />
                     </div>
                 </div>
             </div>

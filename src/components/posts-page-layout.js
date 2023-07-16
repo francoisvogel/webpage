@@ -8,13 +8,13 @@ import Footer from "../pages/footer"
 import Lnk from "../pages/lnk"
 import ShareButtons from "../components/share/sharebuttons.component"
 import { MDXProvider } from "@mdx-js/react"
-import useScrollPercentage from "react-scroll-percentage"
+// import useScrollPercentage from "react-scroll-percentage"
 
 export default function PageTemplate({ data: { mdx } }) {
     return (
         <main class="min-h-screen flex flex-col justify-between bg-gray-100">
             <div>
-                <Header directory="../"/>
+                <Header directory="../" />
                 <DarkTrace></DarkTrace>
                 <ScrollProgressBar></ScrollProgressBar>
                 <div class="flex flex-col items-center w-full">
@@ -31,7 +31,7 @@ export default function PageTemplate({ data: { mdx } }) {
             </div>
             <Footer></Footer>
         </main>
-  )
+    )
 }
 
 export const pageQuery = graphql`

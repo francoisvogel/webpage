@@ -35,7 +35,7 @@
     "react-dom": "^16.8.0",
     "react-gist": "^1.2.2",
     "react-helmet": "^6.1.0",
-    "react-scroll-percentage": "^4.2.0",
+    "react-scroll-percentage": "^4.3.0",
     "react-share": "^4.4.0"
   },
   "devDependencies": {

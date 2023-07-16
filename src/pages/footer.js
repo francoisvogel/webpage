@@ -13,7 +13,7 @@ const Footer = () => {
                 </div> */}
                 <div class="p-2 flex flex-col justify-center">
                     {/* <p>Contact Info</p> */}
-                    <Lnk to="https://mailto:francois.g.vogel@gmail.com" text="francois.g.vogel@gmail.com" />
+                    <a href="mailto:francois.g.vogel@gmail.com">francois.g.vogel@gmail.com</a>
                     {/* <Lnk to="https://discord.com" text="Discord (Francois#6352)" /> */}
                     {/* <Lnk to="https://github.com/francoisvogel" text="Github (francoisvogel)" /> */}
                     {/* <Lnk to="https://twitter.com/fgvogel" text="Twitter (fgvogel)" /> */}
@@ -25,7 +25,9 @@ const Footer = () => {
                     <Lnk to="https://global-hawk.herokuapp.com" text="Global Hawk - an io game" />
                 </div> */}
             </div>
-            <p class="text-center p-1">Copyright © 2021 Francois Vogel - All rights reserved</p>
+            <p class="text-center p-1">Copyright © {
+                new Date().getFullYear()
+            } Francois Vogel</p>
         </footer>
     )
 }
